@@ -1,0 +1,49 @@
+body 
+{
+	background-color: lightblue;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 100%;
+}
+#form
+{
+	top: 100%;
+	left: 50%;
+    width: 30%;
+	font-family: 'Verdana';
+}
+
+#input
+{
+	width: 50%
+    padding: 2px 20px;
+    margin: 5px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#inputs
+{
+	width: 100%;
+    padding: 5px 10px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#submit
+{
+	width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
