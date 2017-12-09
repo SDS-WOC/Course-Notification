@@ -20,7 +20,7 @@ else {
 <head>
   <meta charset="UTF-8">
   <title>Welcome <?= $first_name.' '.$last_name ?></title>
-  <?php include 'css/css.html'; ?>
+  <?php include 'css/styles.html'; ?>
 </head>
 
 <body>
@@ -28,20 +28,6 @@ else {
 
           <h1>Welcome</h1>
           
-          <p>
-          <?php 
-     
-          // Display message about account verification link only once
-          if ( isset($_SESSION['message']) )
-          {
-              echo $_SESSION['message'];
-              
-              // Don't annoy the user with more messages upon page refresh
-              unset( $_SESSION['message'] );
-          }
-          
-          ?>
-          </p>
           
           
           
