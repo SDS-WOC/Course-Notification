@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'config.php';
 $title = $_POST['title'];
 $classcode = $_POST['classcode'];

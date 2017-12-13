@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'config.php';
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -20,10 +21,17 @@ else if($res->num_rows==0)
 }
 else
 {
-	$sql = "INSERT INTO users (name, email, password, class, hash)"."VALUES ('$name', '$email', '$class', '$hash')" ;
+	$ho=$res->fetch_assoc();
+	$sql = "INSERT INTO users (name, email, password, class, hash)".
+	"VALUES ('$name', '$email','$password', '$class', '$hash')" ;
 	if( $mysqli->query($sql))
 	{
 		$_SESSION['message'] = 'Account created successfully, Head to login page to login';
+		header('location: displaymessage.php');
+	}
+	else
+	{
+		$_SESSION['message'] = 'Account could not be created!';
 		header('location: displaymessage.php');
 	}
 }
