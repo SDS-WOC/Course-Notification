@@ -9,22 +9,26 @@ require 'config.php';
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <div id="form">
+  <div class="form">
     <form action="classcreater.php" method="post">
-      <div id="input">
-        Title: <input type="text" name="title" placeholder="Enter title here..." id="inputs">
+      <div class="input">
+        <label> Title: <input class="inputs" type="text" name="title" placeholder="Enter title here...">
+        </label>
       </div>
-      <div id="input">
-        Classcode: <input type="text" name="classcode" placeholder="create classcode here preferably enter something like CSE2021..." id="inputs">
+      <div class="input">
+        <label>Classcode: <input class="inputs" type="text" name="classcode" placeholder="create classcode here preferably enter something like CSE2021...">
+        </label>
       </div>
-      <div id="input">
-        Passcode: <input type="text" name="passcode" placeholder="Enter class passcode..." id="inputs">
+      <div class="input">
+        <label>Passcode: <input class="inputs" type="password" name="passcode" placeholder="Enter class passcode...">
+        </label>
       </div>
-      <div id="input">
-        Confirm Passcode: <input type="password" name="confirmpasscode" placeholder="Enter class passcode again..." id="inputs">
+      <div class="input">
+        <label>Confirm Passcode: <input class="inputs" type="password" name="confirmpasscode" placeholder="Enter class passcode again...">
+        </label>
       </div>
-      <div id="inputs">
-        <input type="submit" value="Create new class!" id="submit">
+      <div class="input">
+        <input type="submit" value="Create new class!" class="submit">
       </div>
   </div>
 </form>

@@ -1,4 +1,4 @@
-<?php
+<php
 require 'config.php';
 SESSION_START();
 ?>
@@ -9,23 +9,26 @@ SESSION_START();
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<div id="form">
-      <form action="login.php" method="post">
-      <div id="input"> 
-        Username: <input type="email" name="email" placeholder="Username" id="inputs">
+	<div class="form">
+    <form action="login.php" method="post">
+      <div class="input"> 
+        <label>Username: <input type="email" name="email" placeholder="Username" class="inputs">
+        </label>
       </div>
-      <div id="input">
-        Password: <input type="password" name="password" placeholder="password" id="inputs">
+      <div class="input">
+        <label>Password: <input type="password" name="password" placeholder="password" class="inputs">
+        </label>
       </div>
-      <div id="input">
-        <input type="submit" value="login" id="submit">
+      <div class="input">
+        <input type="submit" value="login" class="submit">
       </div>
-      <div id="input">
+      <div class="input">
       	Not a member yet? <a href="signuppage.php">Sign Up</a> here...
       </div>
-      <div id="input">
+      <div class="input">
       	Create <a href="createclass.php">new class</a> here...
       </div>
+    </form>
     </div>
   </body>
 </html>

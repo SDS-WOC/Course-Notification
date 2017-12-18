@@ -12,8 +12,7 @@ if($q->num_rows>0)
 }
 else
 {
-    $sql = "INSERT INTO class (title, code, passcode) " 
-            . "VALUES ('$title','$classcode', '$passcode')";
+    $sql = "INSERT INTO class (title, code, passcode) VALUES ('$title','$classcode', '$passcode')";
     if( $mysqli->query($sql) )
     {
     	$_SESSION['message'] = 'class created successfully';
