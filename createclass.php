@@ -12,20 +12,20 @@ require 'config.php';
   <div class="form">
     <form action="classcreater.php" method="post">
       <div class="input">
-        <label> Title: <input class="inputs" type="text" name="title" placeholder="Enter title here...">
-        </label>
+        <label for="title">Title:</label>
+        <input class="inputs" id="title" type="text" name="title" placeholder="Enter title here...">
       </div>
       <div class="input">
-        <label>Classcode: <input class="inputs" type="text" name="classcode" placeholder="create classcode here preferably enter something like CSE2021...">
-        </label>
+        <label for="classcode">Classcode:</label>
+        <input class="inputs" id="classcode" type="text" name="classcode" placeholder="create classcode here preferably enter something like CSE2021...">
       </div>
       <div class="input">
-        <label>Passcode: <input class="inputs" type="password" name="passcode" placeholder="Enter class passcode...">
-        </label>
+        <label for="pass">Passcode:</label>
+        <input class="inputs" id="pass" type="password" name="passcode" placeholder="Enter class passcode...">
       </div>
       <div class="input">
-        <label>Confirm Passcode: <input class="inputs" type="password" name="confirmpasscode" placeholder="Enter class passcode again...">
-        </label>
+        <label for="copass">Confirm Passcode:</label>
+        <input class="inputs" id="copass" type="password" name="confirmpasscode" placeholder="Enter class passcode again...">
       </div>
       <div class="input">
         <input type="submit" value="Create new class!" class="submit">

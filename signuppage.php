@@ -12,22 +12,28 @@ require 'config.php';
 	<div class="form">
 		<form action="signup.php" method="post">
 			<div class="input">
-				Name: <input type="text" name="name" placeholder="Your Name..." class="inputs">
+				<label for="name"></label>
+				<input type="text" id="name" name="name" placeholder="Your Name..." class="inputs">
 			</div>
 			<div class="input">
-				Classcode: <input type="text" name="classcode" placeholder="Classcode" class="inputs">
+				<label for="classcode">Classcode:</label>
+				<input type="text" id="classcode" name="classcode" placeholder="Classcode" class="inputs">
 			</div>
 			<div class="input">
-				Passcode: <input type="text" name="passcode" placeholder="Enter class passcode..." class="inputs">
+				<label for="passcode">Passcode:</label>
+				<input type="text" id="passcode" name="passcode" placeholder="Enter class passcode..." class="inputs">
 			</div>
 			<div class="input">
-				Email: <input type="email" name="email" placeholder="Your email address" class="inputs">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Your email address" class="inputs">
 			</div>
 			<div class="input">
-				Password: <input type="password" name="password" placeholder="Enter password here..." class="inputs">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Enter password here..." class="inputs">
 			</div>
 			<div class="input">
-				Confirm password: <input type="password" name="confirmpassword" placeholder="Enter password again here..." class="inputs">
+				<label id="confirmpassword">Confirm password:</label>
+				<input type="password" id="confirmpassword" name="confirmpassword" placeholder="Enter password again here..." class="inputs">
 			</div>
 			<div class="inputs">
 				<input type="submit" value="SignUp" class="submit">
