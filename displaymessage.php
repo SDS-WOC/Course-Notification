@@ -10,6 +10,7 @@ session_start();
 <body>
 	<?php
 	echo $_SESSION['message']."\n";
+	$_SESSION['message'] = "";
 	?>
 	<a href="index.php">Home</a>
 </body>

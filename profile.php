@@ -10,8 +10,10 @@ require 'config.php';
 <body>
 	<?php
 	echo "Welcome\n";
-	echo $_SESSION['name'];
-	echo $_SESSION['class'];
+	echo $_SESSION['name']." ";
+	echo $_SESSION['class']."\n";
+	echo $_SESSION['message'];
+	$_SESSION['message'] = "";
 	?>
 	<a href="lecture.php">hola</a>
 </body>
