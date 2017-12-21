@@ -11,6 +11,7 @@ if($sql->num_rows>0)
 		$_SESSION['email']=$email;
 		$_SESSION['name']=$user['name'];
 		$_SESSION['class']=$user['class'];
+		$_SESSION['loggedin']="true";
 		header("location:profile.php");
 	}
 	else

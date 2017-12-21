@@ -12,7 +12,7 @@ require 'config.php';
 </head>
 <body>
   <div class="form">
-	  <form action="uploadlect.php" method="post">
+	  <form action="uploadermaterial.php" method="post" enctype="multipart/form-data">
       <div class="input">
         <label for="subject">Subject:</label>
         <select class="inputs" id="subject" name="subject">
@@ -27,15 +27,24 @@ require 'config.php';
         </select> 
       </div>
       <div class="input">
-        <label for="lecture">Lecture file</label>
-        <input type="file" id="lecture" name="lect" placeholder="file" class="inputs">
+        <label for="type">Type:</label>
+        <select class="inputs" id="type" name="type">
+          <option value="Lectures and slides">Lecture</option>
+          <option value="Assignments">Assignment</option>
+          <option value="Books">Book</option>
+          <option value="Other">Other material</option>
+        </select> 
       </div>
       <div class="input">
-        <label for="descript"></label>
+        <label for="lecture">Lecture file</label>
+        <input type="file" id="lecture" name="file" placeholder="file" class="inputs">
+      </div>
+      <div class="input">
+        <label for="descript">Description:</label>
         <input type="text" id="descript" size="100" name="desc" class="inputs">
       </div>
       <div class="input">
-        <input type="submit" value="upload" class="submit">
+        <input type="submit" value="submit" name="submit" class="submit">
       </div>
     </form>
   </div>
