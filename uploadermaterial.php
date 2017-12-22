@@ -5,7 +5,10 @@ $name = $_FILES['file']['name'];
 $temp_name = $_FILES['file']['tmp_name'];
 $subject = $_POST['subject'];
 $type = $_POST['type'];
+$description = $_POST['desc'];
 $class = $_SESSION['class'];
+$user = $_SESSION['name'];
+$dated = $_POST['date'];
 if(isset($name))
 {
     if(!empty($name))
@@ -17,8 +20,14 @@ if(isset($name))
         if(move_uploaded_file($temp_name, $location.$name))
         {
         	$_SESSION['message'] = "File uploaded successfully";
-			header("location: profile.php");
-        }       
+			$sql = $mysqli->query("INSERT INTO studymaterial (title, dated, description, uploader, class, subject, type) VALUES ('$name', '$dated', '$description', '$user', '$class', '$subject', '$type' )");
+            header("location: profile.php");
+        }
+        else 
+        {
+            $_SESSION['message']="file with this name already exists";
+            header("location: profile.php");    
+        }    
     }
 }
 ?>

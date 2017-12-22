@@ -29,11 +29,15 @@ require 'config.php';
       <div class="input">
         <label for="type">Type:</label>
         <select class="inputs" id="type" name="type">
-          <option value="Lectures and slides">Lecture</option>
-          <option value="Assignments">Assignment</option>
-          <option value="Books">Book</option>
+          <option value="Lecture">Lecture</option>
+          <option value="Assignment">Assignment</option>
+          <option value="Book">Book</option>
           <option value="Other">Other material</option>
         </select> 
+      </div>
+      <div class="input">
+        <label for="date">Date(optional):</label>
+        <input type="date" id="date" name="date" class="inputs">        
       </div>
       <div class="input">
         <label for="lecture">Lecture file</label>

@@ -6,6 +6,7 @@
 body {
     margin: 0;
     background-color: lightblue;
+    counter-reset: Serial;
 }
 
 div {
@@ -15,6 +16,17 @@ div {
     width: 100%;
 }
 
+table
+{
+    border-collapse: separate;
+}
+
+tr td:first-child:before
+{
+    counter-increment: Serial;
+    content: counter(Serial) ".";
+    text-align: right;
+}
 .header {
     float: left;
     width: 100%;
@@ -46,19 +58,13 @@ div {
     width: 34%;
 }
 
-.row:after {
-    display: table;
-    clear: both;
-}
-
 .footer {
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
 }
 
-.form
-{
+.form {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
@@ -69,8 +75,7 @@ div {
     font-family: 'Verdana';
 }
 
-.input
-{
+.input {
     width: 50%
     padding: 2px 20px;
     margin: 5px 0px;
@@ -80,22 +85,36 @@ div {
     box-sizing: border-box;
 }
 
-.logout
-{
+.logout {
     margin: 5px;
 }
 
-.uplbuttontext
-{
+.uplbuttontext {
     text-align: right;
 }
-.uplbuttons
+.uplbuttons {
+
+}
+
+.item
 {
 
 }
 
-.inputs
-{
+.items {
+    padding: 3px 5px;
+    margin: 1px 2px;
+    display: inline-block;
+    font-family: 'Verdana';
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; 
+    text-decoration: none;
+    color: #000;
+    text-shadow: 
+}
+
+.inputs {
     width: 100%;
     padding: 5px 10px;
     margin: 1px 0;
@@ -105,8 +124,7 @@ div {
     box-sizing: border-box;
 }
 
-.submit
-{
+.submit {
     width: 100%;
     background-color: #4CAF50;
     color: white;
