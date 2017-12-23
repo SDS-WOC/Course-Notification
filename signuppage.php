@@ -12,7 +12,7 @@ require 'config.php';
 	<div class="form">
 		<form action="signup.php" method="post">
 			<div class="input">
-				<label for="name"></label>
+				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" placeholder="Your Name..." class="inputs">
 			</div>
 			<div class="input">
