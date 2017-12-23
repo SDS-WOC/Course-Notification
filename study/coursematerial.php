@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require '../config.php';
 session_start();
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ session_start();
 	<title>
 		
 	</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
 	<div class="header">

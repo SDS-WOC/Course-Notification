@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require 'config.php';
+require '../config.php';
 $name = $_FILES['file']['name'];  
 $temp_name = $_FILES['file']['tmp_name'];
 $subject = $_POST['subject'];

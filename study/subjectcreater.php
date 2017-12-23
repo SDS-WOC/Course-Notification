@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+require '../config.php';
 $title = $_POST['title'];
 $code = $_POST['code'];
 $class = $_SESSION['class'];

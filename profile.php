@@ -31,10 +31,10 @@ if($_SESSION['loggedin']=="")
 	<div class="column">
 		<div class="column side">
 			<h3>
-				<a href="coursematerial.php">Course-Material</a>
+				<a href="study/coursematerial.php">Course-Material</a>
 			</h3>
 			<div class="uplbuttontext">
-				<a class="uplbuttons" href="uploadmaterial.php">upload material</a>
+				<a class="uplbuttons" href="study/uploadmaterial.php">upload material</a>
 			</div>
 			</div>
 		<div class="column middle">

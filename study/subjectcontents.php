@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require '../config.php';
 session_start();
 $subject=$_GET['subject'];
 ?>
@@ -7,7 +7,7 @@ $subject=$_GET['subject'];
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
 	<div class="header">
